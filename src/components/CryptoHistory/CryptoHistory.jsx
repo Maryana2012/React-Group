@@ -1,4 +1,5 @@
 import { BaseTable, THead, Th, Tr, Td } from './CryptoHistory.styled';
+import { format } from 'date-fns'
 
 export const CryptoHistory = ({items}) => {
 console.log(items);
@@ -18,7 +19,7 @@ return <BaseTable>
       <Td>{index +1}</Td>
       <Td>{price}</Td>
       <Td>{amount}</Td>
-      <Td>{date}</Td>
+      <Td>{format(new Date(date), 'Pp')}</Td>
     </Tr>)
     })}
   </tbody>
