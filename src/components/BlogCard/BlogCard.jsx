@@ -1,4 +1,4 @@
-import { TitleTop } from 'components/ForbesList/ForbesList.styled';
+// import { TitleTop } from 'components/ForbesList/ForbesList.styled';
 import FormatDate from 'helper/formatDate';
 import {
   Card,
